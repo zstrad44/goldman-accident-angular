@@ -1,0 +1,61 @@
+<nav class="navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+            <a class="navbar-brand" ui-sref="home"><div class="imgBox">
+                <img src="/assets/images/logos/new_goldman_blue_FINAL_no_glow.png" alt="Goldman Accident Lawyers" class="img-responsive">
+                </div></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle mainMenu" data-toggle="dropdown">Practice Areas <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a ui-sref="auto-accidents">Auto Accidents</a>
+                        </li>
+                        <li><a ui-sref="personal-injury">Personal Injury</a>
+                        </li>
+                        <li><a ui-sref="wrongful-death">Wrongful Death</a>
+                        </li>
+                        <li><a ui-sref="bike-accidents">Bike Accidents</a>
+                        </li>
+                        <li><a ui-sref="pedestrian-accidents">Pedestrian Accidents</a>
+                        </li>
+                        <li><a ui-sref="bus-accidents">Bus Accidents</a>
+                        </li>
+                        <div class="divider"></div>
+                        <li class="viewAll"><a href="#/practice-areas" ><i class="fa fa-th-large" aria-hidden="true"></i> View All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#/free-consultation" class="mainMenu">Free Consultation</a>
+                </li>
+                <li><a ui-sref="about"  class="mainMenu">About Us</a>
+                </li>
+                <li><a ui-sref="faq" class="mainMenu">FAQ</a>
+                </li>
+                <li><a ui-sref="contact" class="mainMenu">Contact</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle mainMenu" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a ui-sref="blog">List of Posts</a>
+                        </li>
+                        <li><a ui-sref="blog/post">View One Post</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>

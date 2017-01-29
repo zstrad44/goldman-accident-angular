@@ -1,0 +1,48 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="breadcrumbBox">
+      <div class="container">
+        <ol class="breadcrumb">
+            <li><a ui-sref="home" class="btn">Home</a></li>
+            <li><a ui-sref="practice-areas" class="btn">Practice Areas</a></li>
+            <li class="active"><a href="practice-areas" class="btn disabled">{{pageTitle}}</a></li>
+        </ol>
+      </div>
+    </div>
+    <div class="col-xs-12 practicePageHero bg-primary shadow-inset-top-bottom visible-md visible-lg">
+        <div class="col-xs-12">
+            <h3>Need A {{pageTitle}} Lawyer?</h3>
+        </div>
+        <div class="col-xs-12 col-md-12">
+            <a ui-sref="free-consultation" class="btn wireButtonWhite">FIND OUT NOW IF YOU HAVE A CASE</a>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="container" ng-controller="PracticeMasterCtrl">
+  <div class="row">
+
+      <div class="col-lg-1 col-md-1 col-xs-2 titleIconBox">
+        <img src="{{iconLocation}}{{iconColors[0].normal}}{{pageIcon}}" alt="{{pageIconAlt}}" class="img-responsive titleIcon">
+      </div>
+      <div class="col-lg-10 col-md-11 col-xs-10">
+        <h1 class="page-header mainHeader pageTitleHead">{{pageTitle}}</h1>
+      </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+      <div class="section" style="padding-top:10px;">
+          <div class="row">
+            <ui-view></ui-view>
+          </div>
+          <!-- /.row -->
+      </div>
+      <!-- /.section -->
+    </div>
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 pull-right sidebar">
+      <ng-include src="'/templates/sidebar-contact.html'"></ng-include>
+      <!--/.contactBox-->
+    </div>
+
+  </div>
+</div>

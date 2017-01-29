@@ -1,0 +1,139 @@
+<div ng-controller="MasterCtrl">
+
+</div>
+  <nav class="navbar navbar-fixed-top" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+              <a class="navbar-brand" ui-sref="home"><div class="imgBox">
+                  <img src="/assets/images/logos/new_goldman_blue_FINAL_no_glow.png" alt="Goldman Accident Lawyers" class="img-responsive">
+                  </div></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                      <a class="dropdown-toggle mainMenu" data-toggle="dropdown">Practice Areas <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                          <li><a ui-sref="car-accidents">Car Accidents</a>
+                          </li>
+                          <li><a ui-sref="personal-injury">Personal Injury</a>
+                          </li>
+                          <li><a ui-sref="motorcycle-accidents">Motorcycle Accidents</a>
+                          </li>
+                          <li><a ui-sref="wrongful-death">Wrongful Death</a>
+                          </li>
+                          <li><a ui-sref="dui-accidents">DUI Accidents</a>
+                          </li>
+                          <li><a ui-sref="spinal-cord-injuries">Spinal Cord Injuries</a>
+                          </li>
+                          <div class="divider"></div>
+                          <li class="viewAll"><a href="#/practice-areas" ><i class="fa fa-th-large" aria-hidden="true"></i> View All</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li><a href="#/free-consultation" class="mainMenu">Free Consultation</a>
+                  </li>
+                  <li><a ui-sref="about"  class="mainMenu">About Us</a>
+                  </li>
+                  <li><a ui-sref="faq" class="mainMenu">FAQ</a>
+                  </li>
+                  <li><a ui-sref="contact" class="mainMenu">Contact</a>
+                  </li>
+                  <li><a href="http://goldmanaccidentlawyers.com/blog/" class="mainMenu">Blog</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+  </nav>
+
+  <div class="viewBox">
+      <ui-view></ui-view>
+  </div>
+  <div ng-controller="FooterCtrl">
+    <div class="container-fluid callToActionFooter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 col-xs-12">
+            <h2>Contact Us Today</h2>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
+            <a href="#" class="btn wireButton pull-right-lg">Live Chat</a>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
+            <a href="tel:{{phoneNumber}}" class="btn wireButton pull-left-lg">Call Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid info-footer">
+      <div class="container" >
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 footerDetails">
+            <img src="/assets/images/logos/new_goldman_blue_FINAL_no_glow.png" alt="Goldman Accident Lawyers" class="img-responsive">
+            <div class="col-lg-12 col-sm-12 col-xs-12 footerAddress">
+              <p>17851 N 85th St &#35;175</p>
+              <p>Scottsdale, AZ 85255</p>
+            </div>
+            <div class="col-lg-12 col-xs-12">
+              <a ui-sref="contact" class="btn wireButton">Get Directions</a>
+            </div>
+            <div class="col-lg-12 col-xs-12">
+              <a href="tel:1-{{phoneNumber}}" class="btn wireButton">{{phoneNumber}}</a>
+            </div>
+          </div>
+          <div class="col-lg-5  col-md-6 col-sm-12 col-xs-12 footerPages">
+            <div class="col-lg-6 col-sm-12 col-xs-12 footerMenu">
+              <h3>Site Menu</h3>
+             <br />
+             <ul class="list-group">
+               <a ui-sref="{{ page.url | lowercase }}" ng-repeat="page in footerPages | orderBy:'id'" class="list-group-item">{{ page.title }}</a>
+             </ul>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-xs-12 footerPracticeAreas">
+              <h3>Practice Areas</h3>
+             <br />
+             <ul class="list-group">
+               <a ui-sref="{{ practice.url | lowercase }}" ng-repeat="practice in practiceAreas | orderBy:'id'" class="list-group-item">{{ practice.title }}</a>
+               <div class="divider"></div>
+               <a ui-sref="practice-areas"class="list-group-item"><i class="fa fa-chevron-right" aria-hidden="true"></i> &nbsp;View All</a>
+             </ul>
+             <p class="text-primary"></p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+              <div class="social-links">
+               <br />
+               <ul class="list-group">
+                   <a href="{{ platform.url }}" ng-repeat="platform in socialMedia | orderBy:'id'" class="list-group-item" target="_blank" rel="external"><i class="fa {{ platform.faIcon }} social"></i> &nbsp; {{platform.title}}</a>
+               </ul>
+             </div>
+          </div>
+          <div class="col-lg-12  visible-lg text-center footerCities">
+            <span ng-repeat="city in cities"><a href="personal-injury-attorneys-{{city | lowercase }}" >{{ city }}</a> | </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p>© {{date | date:'yyyy'}} <a ui-sref="home">Goldman Accident Lawyers</a>| All Rights Reserved |  <a href="tel:{{phoneNumber}}">{{phoneNumber}}</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div> <!-- End FooterCtrl-->
+</div>  <!-- End MasterCtrl-->

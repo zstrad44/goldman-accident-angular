@@ -1,0 +1,51 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="breadcrumbBox">
+      <div class="container">
+        <ol class="breadcrumb">
+            <li><a ui-sref="home" class="btn">Home</a></li>
+            <li class="active"><a href="practice-areas" class="btn disabled">Practice Areas</a></li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="container" ng-controller="PracticeAreasCtrl">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1 class="page-header mainHeader">Practice Areas
+      </h1>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-8">
+      <div class="section" style="padding-top:10px;">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2>How Can We Help You?</h2><small class="text-primary">PLEASE SLELECT ONE TO LEARN MORE</small>
+                  <hr>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 practiceAreaPanelBox" ng-repeat="practice in practiceAreas | orderBy:'id'">
+                  <a ui-sref="{{practice.url}}" class="shadow-all" ng-init="imgsrc= iconLocation + iconColors[0].normal + practice.icon" ng-mouseover="imgsrc= iconLocation + iconColors[0].hover + practice.icon" ng-mouseout="imgsrc= iconLocation + iconColors[0].normal + practice.icon">
+                      <div class="panel panel-primary practice-area-panel" ng-mouseover="myVar='hoverText'" ng-mouseout="myVar='normalText'">
+                        <div class="panel-body text-center">
+                          <div class="imgBox" >
+                           <img ng-src="{{imgsrc}}"/>
+                         </div>
+                          <h3 ng-class="myVar">{{practice.title}}</h3>
+                        </div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <!-- /.row -->
+      </div>
+      <!-- /.section -->
+    </div>
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 pull-right sidebar">
+      <ng-include src="'/templates/sidebar-contact.html'"></ng-include>
+      <!--/.contactBox-->
+    </div>
+
+  </div>
+</div>

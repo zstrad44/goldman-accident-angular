@@ -1,0 +1,308 @@
+/*
+Custom CSS for...
+'Modern Business' HTML Theme by Start Bootstrap
+
+All Start Bootstrap themes are licensed under Apache 2.0.
+For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap.com!
+*/
+
+/* Global Styles */
+html {
+  min-height: 100%;
+  position: relative;
+}
+html, body {
+    font-family: "Lato", Arial, sans-serif;
+}
+
+body {
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+    margin-bottom: 60px; /* bottom = footer height */
+}
+h1, h2, h3, h4, h5, h6, p {
+  color: #606060;
+}
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, p:hover  {
+  text-decoration: none;
+}
+a:hover,a:focus {
+  text-decoration: none;
+}
+p {
+  font-size: 1.15em;
+}
+.breadcrumb {
+  background-color: #e2e1e0;
+  margin-top: 5px;
+}
+.breadcrumb .btn {
+  font-size: 1.1em;
+}
+.breadcrumb .btn:hover {
+  background-color: #0081BA;
+  color: #fff;
+  border-radius: 0;
+}
+.breadcrumb>li+li:before {
+}
+.wireButton {
+  background-color: transparent;
+}
+/*Bootstrap Ui Fix*/
+.nav, .pagination, .carousel, .panel-title a {
+    cursor: pointer;
+}
+/*End UI Fix*/
+
+.viewBox {
+    margin-top: 115px;
+}
+
+.dropdown {
+    cursor:pointer;
+}
+.page-header {
+  margin: 10px 0;
+}
+.page-header:after {
+    content: '';
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    bottom: 10px;
+    left: calc(4% - 25px);
+    background-color: #0081ba;
+}
+.section-header {
+    padding-bottom: 9px;
+    margin: 0px 0 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/*sidebar-contact-static Styles START*/
+
+  .staticSideBar {
+    margin-top: -40px !important;
+  }
+
+
+/* sidebar-contact-static END*/
+
+
+@media (max-width: 1000px) {
+  .section-header {
+      margin: 30px 0 15px;
+  }
+
+}
+.img-home-portfolio,
+.img-customer,
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.tab-pane {
+    margin-top: 15px;
+}
+
+/* Page Sections */
+.section,
+.section-colored {
+    padding: 40px 0;
+}
+
+.section-colored {
+    background-color: #efefef;
+    /* change this to change the background color of a colored section */
+}
+.colored{
+  background-color: #efefef;
+}
+.sidebar {
+    margin-top: 40px;
+}
+.panel-title {
+  font-size: 1.5em;
+}
+.sidebar ul {
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+}
+.sideBox .list-group-item {
+  font-size: 1.1em;
+}
+.sideBox .list-group-item:hover {
+  background-color: #0081ba;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Half Page Height Carousel Customization */
+.carousel {
+    height: 50%;
+}
+
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Social Icons Styles */
+.list-social-icons {
+    margin-bottom: 45px;
+}
+
+.tooltip-social a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.facebook-link a:hover {
+    color: #3b5998;
+}
+
+.linkedin-link a:hover {
+    color: #007fb1;
+}
+
+.twitter-link a:hover {
+    color: #39a9e0;
+}
+
+.google-plus-link a:hover {
+    color: #d14836;
+}
+
+/* Service Page Styles */
+.service-icon {
+    font-size: 50px;
+}
+
+/* 404 Page Styles */
+.error-404 {
+    font-size: 8em;
+}
+
+/* Pricing Page Styles */
+.price {
+    font-size: 4em;
+}
+
+.price-cents {
+    vertical-align: super;
+    font-size: 50%;
+}
+
+.price-month {
+    font-size: 35%;
+    font-style: italic;
+}
+
+/* Responsive Styles */
+@media (max-width: 425px) {
+    .viewBox {
+        margin-top: 80px;
+    }
+    .page-header:after {
+      left: 10px;
+    }
+    .xs-colored {
+      background-color: #e7e7e7;
+      box-shadow: box-shadow: inset 1px 1px 3px rgba(0,0,0,0.33);
+    }
+}
+@media (max-width: 767px) {
+
+    .carousel {
+        height: 70%;
+        /* increases the carousel height so it looks good on phones */
+    }
+}
+@media (min-width: 1000px) {
+  .viewBox {
+    margin-bottom: 650px;
+  }
+}
+@media (min-width: 1100px) {
+  .pull-left-lg {
+    float: left;
+  }
+  .pull-right-lg {
+    float: right;
+  }
+}
+/* ////////////////////Shadow Styles /////////////////*/
+
+.material-designShadow {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.imgShadow {
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.33);
+}
+
+.shadow-top {
+  box-shadow: 0 -6px 6px -6px rgba(0,0,0,0.33);
+}
+
+.shadow-right {
+  box-shadow: 6px 0 6px -6px rgba(0,0,0,0.33);
+}
+
+.shadow-bottom {
+  box-shadow: 0 6px 6px -6px rgba(0,0,0,0.33);
+}
+
+.shadow-left {
+  box-shadow: -6px 0 6px -6px rgba(0,0,0,0.33);
+}
+
+.shadow-all {
+  box-shadow: 0 0 6px rgba(0,0,0,0.33);
+}
+
+.shadow-inset-top {
+  box-shadow: inset 0 6px 6px -6px rgba(0,0,0,0.33);
+}
+
+.shadow-inset-right {
+  box-shadow: inset -6px 0 6px -6px rgba(0,0,0,0.33);
+}
+
+.shadow-inset-bottom {
+  box-shadow: inset 0 -6px 6px -6px rgba(0,0,0,0.33);
+}
+
+.shadow-inset-left {
+  box-shadow: inset 6px 0 6px -6px rgba(0,0,0,0.33);
+}
+
+.shadow-inset-all {
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.33);
+}
+
+.shadow-left-right {
+  box-shadow: -6px 0 6px -6px rgba(0,0,0,0.33), 6px 0 6px -6px rgba(0,0,0,0.33);
+}
+
+.shadow-top-bottom {
+  box-shadow: 0 -6px 6px -6px rgba(0,0,0,0.33), 0 6px 6px -6px rgba(0,0,0,0.33);
+}
+
+.shadow-inset-left-right {
+  box-shadow: inset 6px 0 6px -6px rgba(0,0,0,0.33), inset -6px 0 6px -6px rgba(0,0,0,0.33);
+}
+
+.shadow-inset-top-bottom {
+  box-shadow: inset 0 6px 6px -6px rgba(0,0,0,0.33), inset 0 -6px 6px -6px rgba(0,0,0,0.33);
+}
+/* ////////////////////Shadow Styles End /////////////////*/

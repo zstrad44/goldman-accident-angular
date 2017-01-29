@@ -1,0 +1,123 @@
+
+
+.breadcrumbBox {
+  background-color: #e9e9e9;
+  margin-bottom: 15px;
+}
+.breadcrumbBox .breadcrumb {
+  background-color: transparent;
+  padding: 0 10px;
+  margin: 0px;
+}
+.breadcrumb>li+li:before {
+  content: "\1433";
+height: 35px;
+vertical-align: middle;
+position: relative;
+margin-left: -5px;
+}
+.breadcrumb>li+li:before:hover {
+
+background-color: #0081ba;
+}
+.breadcrumbBox ol.breadcrumb li.active a.btn {
+  color: #606060;
+}
+
+.practicePageHero {
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.practicePageHero h3 {
+  color: #fff;
+}
+.practicePageHero .btn {
+  margin: 15px 0;
+}
+.practicePageList li {
+    font-size: 1.2em;
+    padding: 5px 0px 0px 10px;
+    margin-left: 1em;
+}
+.practicePageList .fa {
+  font-size: 1.1em;
+  color: #0081BA;
+  padding-top: 5px;
+}
+.practicePageList  {
+padding: 10px 0 15px 0;
+}
+@media (min-width: 1000px) {
+  .breadcrumbBox {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 425px) {
+  img.titleIcon {
+    margin-top: .2vh;
+  }
+  .titleIconBox {
+    padding-right: 0;
+  }
+  .pageTitleHead {
+    font-size: 7.5vw;
+  }
+  .breadcrumbBox {
+    margin-top: -5px;
+  }
+  .breadcrumbBox .container {
+    padding: 0;
+  }
+  .breadcrumbBox ol.breadcrumb {
+    padding: 0 5px;
+  }
+  .breadcrumbBox ol.breadcrumb .btn {
+    padding: 6px 5px;
+    font-size: 3.7vw;
+  }
+  .breadcrumbBox ol.breadcrumb li.active {
+    font-size: 3.7vw;
+    padding: 6px 0px;
+    margin-top: 2px;
+  }
+}
+
+.wireButtonPrimary {
+  border: 1px solid #0081ba;
+  color: #0081ba;
+  background-color: transparent;
+  border-radius: 0;
+  transition: background 0.4s ease-in;
+  font-size: 1.2em;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.wireButtonPrimary:hover {
+  color: #fff;
+    font-weight: normal;
+  border: 1px solid #fff;
+  background-color: #0081ba;
+  transition: background 0.4s ease-out;
+}
+.wireButtonWhite {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #0081ba;
+  border-radius: 0;
+  transition: background 0.4s ease-in;
+  font-size: 1.2em;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.wireButtonWhite:hover {
+  color: #0081ba;
+    font-weight: normal;
+  border: 1px solid #fff;
+  background-color: #fff;
+  transition: background 0.4s ease-out;
+}

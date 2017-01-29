@@ -1,0 +1,85 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 25/01/2017 00:54
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-bike-accident:before { content: "\f100"; }
+.flaticon-boating-accidents:before { content: "\f101"; }
+.flaticon-brain-injury:before { content: "\f102"; }
+.flaticon-burn-injury:before { content: "\f103"; }
+.flaticon-car-accident:before { content: "\f104"; }
+.flaticon-car-damage:before { content: "\f105"; }
+.flaticon-car-run-over-dog:before { content: "\f106"; }
+.flaticon-catastrophic-injury:before { content: "\f107"; }
+.flaticon-dog-bite-injuries:before { content: "\f108"; }
+.flaticon-dog-bite-injuries-2:before { content: "\f109"; }
+.flaticon-dui-accidents:before { content: "\f10a"; }
+.flaticon-head-injury-accidents:before { content: "\f10b"; }
+.flaticon-large-truck-accident:before { content: "\f10c"; }
+.flaticon-motorcycle-accident:before { content: "\f10d"; }
+.flaticon-pedestrian-accident:before { content: "\f10e"; }
+.flaticon-personal-injury:before { content: "\f10f"; }
+.flaticon-personal-injury-2:before { content: "\f110"; }
+.flaticon-personal-injury-3:before { content: "\f111"; }
+.flaticon-personal-injury-4:before { content: "\f112"; }
+.flaticon-personal-injury-5:before { content: "\f113"; }
+.flaticon-soft-tissue-injury:before { content: "\f114"; }
+.flaticon-spinal-cord-accidents:before { content: "\f115"; }
+.flaticon-wrongful-death:before { content: "\f116"; }
+    
+    $font-Flaticon-bike-accident: "\f100";
+    $font-Flaticon-boating-accidents: "\f101";
+    $font-Flaticon-brain-injury: "\f102";
+    $font-Flaticon-burn-injury: "\f103";
+    $font-Flaticon-car-accident: "\f104";
+    $font-Flaticon-car-damage: "\f105";
+    $font-Flaticon-car-run-over-dog: "\f106";
+    $font-Flaticon-catastrophic-injury: "\f107";
+    $font-Flaticon-dog-bite-injuries: "\f108";
+    $font-Flaticon-dog-bite-injuries-2: "\f109";
+    $font-Flaticon-dui-accidents: "\f10a";
+    $font-Flaticon-head-injury-accidents: "\f10b";
+    $font-Flaticon-large-truck-accident: "\f10c";
+    $font-Flaticon-motorcycle-accident: "\f10d";
+    $font-Flaticon-pedestrian-accident: "\f10e";
+    $font-Flaticon-personal-injury: "\f10f";
+    $font-Flaticon-personal-injury-2: "\f110";
+    $font-Flaticon-personal-injury-3: "\f111";
+    $font-Flaticon-personal-injury-4: "\f112";
+    $font-Flaticon-personal-injury-5: "\f113";
+    $font-Flaticon-soft-tissue-injury: "\f114";
+    $font-Flaticon-spinal-cord-accidents: "\f115";
+    $font-Flaticon-wrongful-death: "\f116";

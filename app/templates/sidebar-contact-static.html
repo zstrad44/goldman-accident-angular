@@ -1,0 +1,102 @@
+<!-- This Sidebar Contact Box Does Not Have BS Affix  -->
+<div class=" contactBox center-block visible-lg staticSideBar">
+    <div class="accordionBox">
+        <h3>Free Case Evaluation</h3>
+        <h4 class="accordionBoxText"></h4>
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                    <h4 class="panel-title">
+                        <i class="fa fa-comments" aria-hidden="true"></i> Live Chat
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body"><button class="btn btn-success btn-block btn-lg">Start Chat</button></div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="modal" data-target="#caseEvalModal">
+                    <h4 class="panel-title">
+                        <i class="fa fa-envelope" aria-hidden="true"></i> Send Us A Message
+                    </h4>
+                </div>
+
+                <div class="modal fade" id="caseEvalModal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Send Us A Message</h4>
+                            </div>
+                            <div class="modal-body">
+                              <form id="contact_form" action="/Evaluation-success.html">
+                                <div class="row">
+                                  <div class="col-lg-12 col-sm-12">
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                      <h2>Fill out this form for a FREE, Immediate, Case Evaluation</h2>
+                                      <br />
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                      <div class="form-group">
+                                        <label for="name">First Name:</label>
+                                        <input id="firstname" class="input form-control" name="name" type="text" value="" />
+                                      </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                      <div class="form-group">
+                                        <label for="name">Last Name:</label>
+                                        <input id="lastname" class="input form-control" name="name" type="text" value="" size="28" />
+                                      </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                      <div class="form-group">
+                                          <label for="email">Email Address:</label>
+                                          <input id="email" class="input form-control" name="email" type="text" value="" size="28" />
+                                      </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                      <div class="form-group">
+                                          <label for="phone">Best Contact Number:</label>
+                                          <input id="phone" class="input form-control" name="email" type="text" value="" size="28" />
+                                      </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                      <div class="form-group">
+                                          <label for="message">Case Details:</label>
+                                          <br />
+                                          <textarea id="message" class="input form-control" name="message" rows="4" cols="20"></textarea>
+                                          <br />
+                                      </div>
+                                    </div>
+
+                                    <button id="submit_button" class="btn btn-lg center-block" type="submit"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Submit Evaluation</button>
+
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                    <h4 class="panel-title">
+                        <i class="fa fa-mobile" aria-hidden="true"></i> Free Phone Call
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                  <div class="panel-body"><a href="tel:+1-{{phoneNumber}}" class="btn btn-success btn-block btn-lg">{{phoneNumber}}</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

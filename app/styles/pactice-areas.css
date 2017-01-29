@@ -1,0 +1,291 @@
+.practice-area-panel {
+  min-height: 210px;
+}
+.practice-area-panel .panel-body {
+    padding: 10px 5px;
+}
+.practice-area-panel .panel-body img {
+  height: 100%;
+    margin-bottom: 15px;
+}
+.practiceAreaPanelBox a .practice-area-panel {
+  background-color: #fff;
+  color: #696969;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 0;
+  color: #696969;
+  text-decoration: none;
+}
+.practiceAreaPanelBox a .practice-area-panel:hover {
+  background: #0088CC;
+  background: -moz-radial-gradient(center, ellipse cover,  #0088CC 0%, #0081ba 80%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#0088CC), color-stop(80%,#0081ba));
+  background: -webkit-radial-gradient(center, ellipse cover,  #0088CC 0%,#0081ba 80%);
+  background: -o-radial-gradient(center, ellipse cover,  #0088CC 0%,#0081ba 80%);background: -ms-radial-gradient(center, ellipse cover,  #0088CC 0%,#0081ba 80%);
+  background: radial-gradient(ellipse at center,  #0088CC 0%,#0081ba 80%);
+  border-radius: 0;
+  color: #fff;
+  text-decoration: none;
+}
+.practice-area-panel .panel-body .imgBox {
+	padding: 5px 0;
+  height: 100px;
+}
+.regularText {
+  color: #696969;
+}
+.hoverText {
+  color: #fff;
+  text-decoration: none;
+}
+.sideBox{
+    padding: 10px;
+}
+.sideBox h2 {
+    margin: 0px;
+}
+
+@media(max-width:768px) {
+  .practiceAreaPanelBox a .practice-area-panel {
+  font-size: 1em;
+  }
+}
+@media(max-width:425px) {
+
+
+}
+
+/* Sidebar Contact Form Styles START*/
+
+.sidebar .contactBox {
+    width: 300px;
+    background-color: rgba(211, 211, 211, .5);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.sidebar .contactBox h3 {
+    margin-top: -5px;
+    padding: 10px 10px 10px 10px;
+    margin: -10px;
+    margin-bottom: 25px;
+    background-color: #CD5C5C;
+    text-align: center;
+    color: #efefef;
+    font-size: 2.4em;
+    border-radius: 10px 10px 0 0px;
+}
+.sidebar .contactBox .accordionBoxText {
+  padding: 0 10px;
+  font-size: 1.6em;
+}
+.sidebar .contactBox p {
+    margin-top: -10px;
+    font-size: 1.45em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .formBox {
+    background-color: #f8f8f8;
+    width: auto;
+    margin: -15px;
+    padding: 15px;
+    border-radius: 0px;
+    border: 2px solid #696969;
+
+}
+.sidebar .accordionBox {
+    background-color: #eee;
+    width: auto;
+    padding: 10px;
+    border-radius: 12px;
+    border-style: inset;
+}
+.sidebar .accordionBox .fa {
+  font-size: 1.3em;
+  padding-right: 5px;
+}
+.sidebar .contactBox .panel-heading {
+  background-color: #0081BA;
+  background: -webkit-linear-gradient(top, #0091ff 0%,#0081BA 100%);
+  transition: .3s ease;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+.sidebar .contactBox .panel-title {
+    font-size: 1.5em;
+}
+.sidebar .accordionBox .panel-heading:hover {
+  background: -webkit-linear-gradient(top, #909090 0%,#454545 100%);
+  transition: .3s ease;
+  cursor: pointer;
+}
+.sidebar #caseEvalModal {
+    z-index: +20000;
+}
+.sidebar #caseEvalModal .modal-header {
+  background-color: #0081BA;
+}
+.sidebar #caseEvalModal .modal-header h4 {
+  color: #fff;
+  
+}
+.sidebar #caseEvalModal .modal-body {
+  background-color: #e3e3e3;
+}
+.sidebar #caseEvalModal .modal-body button  {
+    background: -webkit-linear-gradient(top, #6bba70 0%,#6bba70 100%);
+    color: #fff;
+    font-size: 1.5em;
+    -webkit-transition: all .5s ease;
+    transition: all .6s ease;
+    border: none !important;
+    margin-bottom: 10px;
+}
+
+.sidebar #caseEvalModal .modal-body button:hover {
+    background: -webkit-linear-gradient(top, #8fc800 0%,#8fc800 100%);
+    color: #fff;
+    -webkit-transform: scaleX(1.05) scaleY(1.1);
+    -ms-transform: scaleX(1.05) scaleY(1.1);
+    transform: scaleX(1.05) scaleY(1.1);
+    -webkit-transition: all .5s ease;
+    transition: all .6s ease;
+}
+.sidebar #caseEvalModal .modal-footer {
+  background-color: #aaa;
+}
+.sidebar .form-group {
+	margin-bottom: 10px;
+}
+.sidebar .input {
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: .5px;
+    padding: 3px 0 3px 3px;
+    font-size: 1em;
+    text-indent: 5px;
+    font-weight: 900;
+    color: #0081ba;
+    transition: .2s ease-in, .2s ease-out;
+}
+
+.sidebar .input:focus {
+    border: 2px solid rgba(30, 144, 255, 0.15);
+    transition: .2s ease-in, .2s ease-out;
+}
+
+.sidebar .input:hover {
+    box-shadow: 0 1px 4px rgba(30, 144, 255, 0.4);
+    transition: .2s ease-in, .2s ease-out;
+}
+
+.sidebar .formBox button {
+    background: -webkit-linear-gradient(top, #6bba70 0%,#6bba70 100%);
+    color: #fff;
+    width: 100%;
+    font-size: 1.5em;
+    -webkit-transition: all .5s ease;
+    transition: all .6s ease;
+    border: none !important;
+}
+
+.sidebar .formBox button:hover {
+    background: -webkit-linear-gradient(top, #8fc800 0%,#8fc800 100%);
+    color: #fff;
+    -webkit-transform: scaleX(1.05) scaleY(1.1);
+    -ms-transform: scaleX(1.05) scaleY(1.1);
+    transform: scaleX(1.05) scaleY(1.1);
+    -webkit-transition: all .5s ease;
+    transition: all .6s ease;
+}
+.sidebar .contactBox label {
+    font-size: 1.15em;
+    padding-bottom: 2px;
+}
+@media(min-width:1200px) {
+  .sidebar {
+    padding-left: 70px;
+
+  }
+
+    .sidebar .contactBox{
+        float: right;
+        /*margin-top: -30px;
+        margin-bottom: 20px;*/
+        /*position: fixed;*/
+    }
+    /*.affix {
+      top: 0px;
+  }
+  .affix-bottom {
+      position: absolute;
+      }*/
+      .affix {
+        position: fixed;
+        top: 120px;
+      float: right;
+      }
+      .affix-top {
+        position: static;
+        float: right;
+      }
+      .affix-bottom {
+        position: absolute;
+        float: right;
+      }
+
+}
+
+@media(max-width:768px) {
+    .sidebar .contactBox{
+
+    }
+}
+@media(max-width:425px) {
+    .sidebar .contactBox{
+
+    }
+
+}
+
+/* Sidebar Contact Form Styles END*/
+
+
+@media (max-width: 425px) {
+    .practice-area-panel .panel-body .imgBox {
+        padding: 5px;
+    }
+    .practice-area-panel .panel-body h3 {
+        font-size: 1.5em;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .page-header {
+        margin: 10px 0 10px;
+    }
+
+}
+
+@media(max-width:1200px) {
+    .sideBox {
+        display: none;
+    }
+
+}
+
+@media(min-width:1200px) {
+
+
+}

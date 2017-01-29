@@ -1,1 +1,310 @@
-<h1>Home Page</h1>
+<div ng-controller="HomeCtrl" >
+    <div class="container-fluid hero"  style="background-image: url( '/assets/images/stock_images/car accident2.jpg' )">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 heroContent">
+              <div class="shadow">
+                  <h1>Scottsdale <br>Personal Injury Lawyers</h1>
+              </div>
+              <div class="shadow">
+                  <h3>Hurt in a Accident?</h3>
+                  <p>Call Us Today</p>
+                  <h4>480-626-8483</h4>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 pull-right">
+              <div class=" contactBox center-block">
+                  <div class="accordionBox">
+                      <h3>Free Case Evaluation</h3>
+                      <h4 class="accordionBoxText">How can we help? We are available to answer your questions...</h4>
+                      <br />
+                      <div class="panel-group" id="accordion">
+                          <div class="panel panel-default">
+                              <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                  <h4 class="panel-title">
+                                      <i class="fa fa-comments" aria-hidden="true"></i> Live Chat
+                                  </h4>
+                              </div>
+                              <div id="collapse1" class="panel-collapse collapse">
+                                  <div class="panel-body"><button class="btn btn-success btn-block btn-lg">Start Chat</button></div>
+                              </div>
+                          </div>
+                          <div class="panel panel-default">
+                              <div class="panel-heading" data-toggle="modal" data-target="#caseEvalModal">
+                                  <h4 class="panel-title">
+                                      <i class="fa fa-envelope" aria-hidden="true"></i> Send Us A Message
+                                  </h4>
+                              </div>
+
+                              <div class="modal fade" id="caseEvalModal" role="dialog">
+                                  <div class="modal-dialog">
+                                      <div class="modal-content">
+                                          <div class="modal-header">
+                                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                              <h4 class="modal-title">Send Us A Message</h4>
+                                          </div>
+                                          <div class="modal-body">
+                                            <form id="contact_form" action="/Evaluation-success.html">
+                                              <div class="row">
+                                                <div class="col-lg-12 col-sm-12">
+                                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                                    <h2>Fill out this form for a FREE, Immediate, Case Evaluation</h2>
+                                                    <br />
+                                                  </div>
+                                                  <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="form-group">
+                                                      <label for="name">First Name:</label>
+                                                      <input id="firstname" class="input form-control" name="name" type="text" value="" />
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="form-group">
+                                                      <label for="name">Last Name:</label>
+                                                      <input id="lastname" class="input form-control" name="name" type="text" value="" size="28" />
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label for="email">Email Address:</label>
+                                                        <input id="email" class="input form-control" name="email" type="text" value="" size="28" />
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label for="phone">Best Contact Number:</label>
+                                                        <input id="phone" class="input form-control" name="email" type="text" value="" size="28" />
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label for="message">Case Details:</label>
+                                                        <br />
+                                                        <textarea id="message" class="input form-control" name="message" rows="4" cols="20"></textarea>
+                                                        <br />
+                                                    </div>
+                                                  </div>
+
+                                                  <button id="submit_button" class="btn btn-lg center-block" type="submit"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Submit Evaluation</button>
+
+                                                </div>
+                                              </div>
+                                            </form>
+                                          </div>
+                                          <div class="modal-footer">
+                                              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="panel panel-default">
+                              <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                  <h4 class="panel-title">
+                                      <i class="fa fa-mobile" aria-hidden="true"></i> Free Phone Call
+                                  </h4>
+                              </div>
+                              <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body"><a href="tel:+1-480-626-8483" class="btn btn-success btn-block btn-lg">480-626-8483</a></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+              <!--/.contactBox-->
+            </div>
+            <!--/.contactBox-->
+            <div class="col-lg-7">
+              <div class="introContainer" id="introSection">
+                <div class="col-xs-12 anchor" id="intro">
+                    <h2 class="material-designShadow"> <span class="highlight">No Up Front Costs,</span>  <br>We'll help you get the settlement that you deserve!</h2>
+
+                    <h3 class="material-designShadow">Result driven and caring personal injury attorneys<br> in Arizona and an experienced legal staff</h3>
+                    <!-- <ul>
+                        <li>Result driven and caring personal injury attorneys in Arizona and an experienced legal staff</li>
+                        <li>Free consultations</li>
+                        <li>No up front costs</li>
+                        <li>Attorneys that come to you</li>
+                        <li>Hurt? Contact us today!</li>
+                    </ul>
+                    <br> -->
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-colored text-center shadow-inset-top-bottom" id="keyPoints">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h3 class="text-center"><i class="fa fa-check-square-o"></i><br>Highly Qualified</h3>
+                    <p>Goldman Accident lawyers is a leading personal injury law firm dedicated to protecting the people, not the powerful.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h3 class="text-center"><i class="fa fa-gavel"></i><br>Best Personal Injury Lawyers</h3>
+                    <p>Our Scottsdale accident lawyers will handle your personal injury case and can help ensure that your rights are protected.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h3 class="text-center"><i class="fa fa-heart-o"></i><br>Locally Trusted</h3>
+                    <p>Conveniently located in Scottsdale, Arizona we are the trusted accident lawyers to help get you the settlement you deserve.</p>
+                </div>
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.section -->
+
+    <!-- <div class="section-colored text-center shadow-inset-top-bottom">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>We won't bill you until we win your case!</h2>
+                    <h3>Contact Us Today! We are ready to help!</h3>
+                    <button class="btn">Live Chat</button>
+                    <button class="btn">Call Now</button>
+                    <hr>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+   -->
+
+    <div class="section">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>How Can We Help You?</h2>
+                    <hr>
+                    <h4>Have you or somebody you love suffered a serious injury? We can help you to know what you can do about it right now. Whether you've been in an accident or are looking for an Essure Lawyer, we are here to help.</h4>
+                    <hr>
+                </div>
+                <a href="portfolio-item.html" class="homeCard-Wrapper">
+                  <div class="col-lg-4 col-md-4 col-sm-6" >
+                    <div class="homeCard" style="background-image: url( '/assets/images/stock_images/Personal-Injury-Lawyers.jpg' )">
+                      <h3 class="homeCard-heading">Personal Injury</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="portfolio-item.html" class="homeCard-Wrapper">
+                  <div class="col-lg-4 col-md-4 col-sm-6" >
+                    <div class="homeCard" style="background-image: url( '/assets/images/stock_images/car-accident-lawyers.jpg' )">
+                      <h3 class="homeCard-heading">Auto Accidents</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="portfolio-item.html" class="homeCard-Wrapper">
+                  <div class="col-lg-4 col-md-4 col-sm-6" >
+                    <div class="homeCard" style="background-image: url( '/assets/images/stock_images/truck-accident-attorney.jpg' )">
+                      <h3 class="homeCard-heading">Large Truck Accidents</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="portfolio-item.html" class="homeCard-Wrapper">
+                  <div class="col-lg-4 col-md-4 col-sm-6" >
+                    <div class="homeCard" style="background-image: url( '/assets/images/stock_images/motorcycle-accident-personal-injury-lawyer-phoenix.jpg' )">
+                      <h3 class="homeCard-heading">Motorcycle Accidents</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="portfolio-item.html" class="homeCard-Wrapper">
+                  <div class="col-lg-4 col-md-4 col-sm-6" >
+                    <div class="homeCard" style="background-image: url( '/assets/images/stock_images/spine-injury.jpg' )">
+                      <h3 class="homeCard-heading">Spinal Injuries</h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="portfolio-item.html" class="homeCard-Wrapper">
+                  <div class="col-lg-4 col-md-4 col-sm-6" >
+                    <div class="homeCard" style="background-image: url( '/assets/images/stock_images/bike-accidents.jpg' )">
+                      <h3 class="homeCard-heading">Bike Accidents</h3>
+                    </div><br>
+                  </div>
+                </a>
+                <div class="col-lg-4 col-lg-offset-4 col-sm-10 col-sm-offset-1">
+                  <a ui-sref="practice-areas" class="btn btn-primary btn-block btn-lg">View All Practices Areas</a>
+                </div>
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.section -->
+
+    <div class="section-colored shadow-inset-top-bottom">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-8 col-md-6 col-sm-6">
+                    <h2>PERSONAL INJURY ATTORNEYS IN SCOTTSDALE, ARIZONA</h2>
+                <p>Our car accident attorneys in Scottsdale and the entire greater Phoenix Area represent victims of all types of traffic collisions, including bicycle accidents and pedestrian accidents. The National Highway Traffic Safety Administration continues to report Arizona among the deadliest states in the country for drivers.</p>
+                <br>
+                <p>As Scottsdale injury lawyers dedicated to representing personal injury and wrongful death claims, Goldman Accident Lawyers, has the knowledge, experience, and resources to handle all types of claims, including but, not limited to: trucking accidents, soft tissue injuries, construction accidents, premise liability claims and injuries to children.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <img class="img-responsive material-designShadow" src="/assets/images/stock_images/phoenix-personal-injury-attorney.jpg">
+                </div>
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.section-colored -->
+
+    <div class="section about-section">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <img class="img-responsive material-designShadow" src="/assets/images/stock_images/personal-injury-attorneys-arizona.jpg">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <h2>When you contact Goldman Accident Lawyers you can expect to get:</h2>
+                    <ol>
+                        <li>The Top Personal Injury Attorneys In Arizona</li>
+                        <li>An Experienced Legal Staff</li>
+                        <li>Free Case Evaluations</li>
+                        <li>No Recovery, No Fee Case Representation</li>
+                        <li>No Up Front Costs</li>
+                        <li>Attorneys That Will Fight For You!</li>
+                    </ol>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6" style="text-align:center">
+                  <a ui-sref="about" class="btn btn-primary btn-lg">Learn More</a>
+                </div>
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.section -->
+
+</div>
+<!--NG HomeCtrl-->

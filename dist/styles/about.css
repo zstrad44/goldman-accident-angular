@@ -1,0 +1,39 @@
+.staffCard {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.staffCard img {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 150px;
+    height: 182px;
+    border-radius: 3px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.cardDetails h3 {
+  background-color: #0081ba;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  margin: 0 -10px;
+}
+.cardDetails small {
+  background-color: #696969;
+  color: #fff;
+  padding: 3px 30px;
+  width: 100%;
+  margin-top: -2px;
+  font-size: .9em;
+}
+.cardDetails p {
+  padding: 5px;
+}
