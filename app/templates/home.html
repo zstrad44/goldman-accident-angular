@@ -1,6 +1,9 @@
 <div ng-controller="HomeCtrl" >
-    <div class="container-fluid hero"  style="background-image: url( '/assets/images/stock_images/car accident2.jpg' )">
-    </div>
+
+      <div class="container-fluid hero"  style="background-image: url( '/assets/images/stock_images/car-accident.jpg' )">
+      </div>
+
+
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 heroContent">
@@ -10,14 +13,14 @@
               <div class="shadow">
                   <h3>Hurt in a Accident?</h3>
                   <p>Call Us Today</p>
-                  <h4>480-626-8483</h4>
+                  <a href="tel:{{phoneNumber}}"><h4>480-626-8483</h4></a>
               </div>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 pull-right">
               <div class=" contactBox center-block">
                   <div class="accordionBox">
                       <h3>Free Case Evaluation</h3>
-                      <h4 class="accordionBoxText">How can we help? We are available to answer your questions...</h4>
+                      <h4 class="accordionBoxText"> Do You Have A Case?<br> Get Immediate Help</h4>
                       <br />
                       <div class="panel-group" id="accordion">
                           <div class="panel panel-default">
@@ -292,7 +295,6 @@
                         <li>No Up Front Costs</li>
                         <li>Attorneys That Will Fight For You!</li>
                     </ol>
-
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6" style="text-align:center">
                   <a ui-sref="about" class="btn btn-primary btn-lg">Learn More</a>

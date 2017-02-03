@@ -22,16 +22,28 @@
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/footer.css">
     <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/faq.css">
     <link rel="stylesheet" href="/styles/practice-master.css">
     <link rel="stylesheet" href="/styles/pactice-areas.css">
     <link rel="stylesheet" href="/styles/about.css">
+    <link rel="stylesheet" href="/styles/free-consultation.css">
+    <link rel="stylesheet" href="/styles/contact.css">
+    <link rel="stylesheet" href="/styles/css-assets/less-space.css">
+    <script>
+			// SVG feature detection
+			function supportsSVG() {
+			    return !! document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
+			}
+			if (supportsSVG()) {
+			    document.documentElement.className += ' svg';
+			} else {
+			    document.documentElement.className += ' no-svg';
+			}
+		</script>
 </head>
 <body data-ng-app="gaApp">
 
-
         <ui-view></ui-view>
-
-
 
     <!-- <ng-include src="'partials/footer.html'"></ng-include> -->
    <!--jQuery-->
@@ -53,14 +65,21 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/ng-meta/0.3.9/ngMeta.min.js"></script>
     <!--App Scripts-->
     <script src="/scripts/app.js"></script>
-    <script src="/scripts/services/Data_PracticeAreas.js"></script>
+    <!-- <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBGd0vd9VJEo7h3LfiS53wa_zG6ktUEYZk&callback=initMap"></script> -->
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGd0vd9VJEo7h3LfiS53wa_zG6ktUEYZk&extension=js"
+  type="text/javascript"></script> -->
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGd0vd9VJEo7h3LfiS53wa_zG6ktUEYZk&libraries=places">
+    <script src="/scripts/controllers/services/PracticeData.js"></script>
     <script src="/scripts/controllers/MasterCtrl.js"></script>
     <script src="/scripts/controllers/HomeCtrl.js"></script>
     <script src="/scripts/controllers/AboutCtrl.js"></script>
+    <script src="/scripts/controllers/FaqCtrl.js"></script>
+    <script src="/scripts/controllers/FreeConsultationCtrl.js"></script>
     <script src="/scripts/controllers/PracticeMasterCtrl.js"></script>
     <script src="/scripts/controllers/PracticeAreasCtrl.js"></script>
     <script src="/scripts/controllers/ContactCtrl.js"></script>
     <script src="/scripts/controllers/FooterCtrl.js"></script>
+
     <!-- <script src="/scripts/directives/imageBackground.js"></script> -->
 
 </body>

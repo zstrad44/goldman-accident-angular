@@ -1,0 +1,141 @@
+.fluid {
+  padding: 0 0 0 0;
+  margin-top: 50px;
+}
+.callToActionBtn {
+font-size: 1.3em;
+}
+.callToActionBtn .fa {
+  font-size: 1.4em;
+  margin: -10px 0 0 -113px;
+  position: absolute;
+  background-color: #0081BA;
+  color: #fff;
+  padding:10px 15px;
+}
+.contact-page .tab-content {
+  border: 1px solid #0081BA;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 4px 4px rgba(0,0,0,0.23);
+  padding: 15px;
+}
+.contact-page .tabBox button.wireButtonPrimary.active {
+  background-color: #0081BA;
+  color: #fff;
+}
+.contact-page .tabBox button.wireButtonPrimary {
+  border-bottom: 0;
+}
+.contact-page .outerBox {
+  margin: 0 auto;
+  margin-top: 40px;
+
+}
+.contact-page .box {
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23), 0 -6px 6px -6px rgba(0,0,0,0.33);
+  padding: 10px;
+}
+.contact-page .box .btn {
+  margin-bottom: 10px;
+}
+
+ .contact-page .box .imgBox {
+   text-align: center;
+   width: 8vw;
+   margin: 0 auto;
+ }
+  .contact-page .box .imgBox img {
+    width: 100%;
+  }
+  .contact-page .box .btn {
+    width: 80%;
+  }
+@media (min-width: 1000px) {
+  .contact-page .outerBox {
+      margin-top: 40px;
+     height: 320px;
+  }
+  .contact-page .box {
+    height: 300px;
+    margin: 0 auto;
+    margin: 5px;
+    text-align: center;
+  }
+ }
+ @media (max-width: 768px;) {
+   .contact-page .outerBox {
+      display: inline-block;;           /* establish flex container */
+      justify-content: center; /* center items vertically, in this case */
+      align-items: center;     /* center items horizontally, in this case */
+      height: auto;
+   }
+   .contact-page .box {
+     height: auto;
+     width: auto;
+     text-align: center;
+     margin: 0;
+     padding: 10px;
+   }
+
+ }
+
+/*CHECKBOX CSS*/
+
+.checkbox label:after,
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}

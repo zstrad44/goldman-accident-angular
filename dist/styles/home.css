@@ -9,6 +9,9 @@
     left: 0;
     right: 0;
     z-index: -1000;
+    overflow: hidden;
+    float: none;
+    display: block;
 }
 .heroContent {
   text-align: center;
@@ -69,14 +72,46 @@
 @media(min-width:1200px) {
     .hero {
         height: 500px;
-        background-position: right 0px bottom -540px;
+        background-position: right 0px bottom -440px;
     }
+
 }
 @media(max-width:1200px) {
     .hero {
-        height: 500px;
-        background-position: right -170px bottom 0px;
+        height: 425px;
+        /*background-position: right -170px bottom 0px;*/
+        background-position: center center;
+
     }
+    .heroContent {
+      margin-bottom: 50px;
+    }
+}
+@media(max-width:475px) {
+  .heroContent h1 {
+    font-size: 14vw;
+  }
+  .heroContent h3 {
+    font-size: 12vw;
+  }
+  .heroContent p {
+    font-size: 12vw;
+  }
+  .heroContent h4 {
+    font-size: 12vw;
+  }
+    .heroContent h4:after {
+      content: "Touch to Call";
+      position: absolute;
+      bottom: -2.3%;
+      font-size: 3vw;
+      background-color: rgba(0, 60, 120, .5);
+      padding: 5px;
+      width: 20%;
+      left: 40%;
+      border-radius: 0 0 4px 4px;
+    }
+
 }
 
 
@@ -105,7 +140,8 @@
 }
 .contactBox .accordionBoxText {
   padding: 0 10px;
-  font-size: 1.6em;
+  font-size: 1.8em;
+  text-align: center;
 }
 .contactBox p {
     margin-top: -10px;
@@ -155,6 +191,8 @@
 }
 #caseEvalModal .modal-header {
   background-color: #0081BA;
+}
+#caseEvalModal .modal-header .modal-title {
   color: #fff;
 }
 #caseEvalModal .modal-body {
@@ -246,8 +284,9 @@
 
 @media(max-width:768px) {
     .contactBox{
-
+    margin-bottom: 50px;
     }
+
 }
 @media(max-width:425px) {
     .contactBox{
@@ -350,5 +389,13 @@
 .about-section li {
   font-size: 1.5em;
   padding: 4px;
+}
+
+@media(max-width: 475px) {
+  .about-section .btn {
+    margin-top: 15px;
+    width: 80%;
+
+  }
 }
 /*About Section End*/

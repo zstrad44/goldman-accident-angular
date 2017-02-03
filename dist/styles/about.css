@@ -1,3 +1,18 @@
+
+.aboutPageList li {
+    font-size: 1.15em;
+    padding: 10px 0px 0px 10px;
+    margin-left: 1em;
+}
+
+.aboutPageList li .fa{
+  font-size: 1.1em;
+  color: #0081BA;
+  padding-top: 10px;
+}
+.aboutPageList {
+  padding: 10px 0 15px 0;
+}
 .staffCard {
   background: #fff;
   border-radius: 2px;

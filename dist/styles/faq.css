@@ -1,0 +1,21 @@
+
+.faqAccordion .panel-default>.panel-heading {
+  border: 1px solid #0081ba;
+  color: #0081BA;
+  border-radius: 0;
+}
+.faqAccordion .panel-default>.panel-heading:hover {
+  color: #fff;
+  background-color: #0081BA;
+    cursor: pointer;
+}
+.faqAccordion .panel-default>.panel-heading+.panel-collapse>.panel-body {
+  border: 1px solid #0081ba;
+  border-top: 0;
+}
+.faqAccordion .panel-default>.panel-heading+.panel-collapse>.panel-body {
+  font-size: 1.2em;
+}
+.faqPage .contactBox {
+  margin-top: 100px;
+}

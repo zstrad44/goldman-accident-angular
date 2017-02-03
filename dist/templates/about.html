@@ -3,21 +3,24 @@
 
     <div class="breadcrumbBox">
       <div class="container">
-        <ol class="breadcrumb">
+        <!-- <ol class="breadcrumb">
             <li><a ui-sref="home" class="btn">Home</a></li>
             <li class="active"><a href="practice-areas" class="btn disabled">About Us</a></li>
-        </ol>
+        </ol> -->
+          <div  id="bc1" class="btn-group btn-breadcrumb">
+              <a href="/index.html" class="btn btn-default"><i class="glyphicon glyphicon-home text-primary"></i></a>
+              <a ui-sref="about" class="btn btn-default active">About Us</a>
+          </div>
       </div>
     </div>
 
   </div>
 </div>
 <div class="wrapper" ng-controller="AboutCtrl">
-  <div class="section">
     <div class="container">
       <div class="row">
           <div class="col-lg-12">
-              <h1 class="page-header">About
+              <h1 class="page-header media-heading">About
                   <small>It's Nice to Meet You!</small>
               </h1>
           </div>
@@ -25,24 +28,31 @@
 
       <div class="row">
             <div class="col-md-8 ">
-              <div class="col-lg-12">
-                <h2 class="page-header">The Goldman Difference</h2>
-              </div>
+              <figure>
+                  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-5">
+                      <img src="/assets/images/stock_images/goldman-office.jpg" alt="Goldman Accident lawyers law office, jpg" class="img-responsive pull-left material-designShadow">
+                      <br>
+                  </div>
+              </figure>
+              <section class="col-xs-12 col-sm-12 col-md-8 col-lg-7">
+                  <br>
+                  <h3 class="section-header">The Goldman Difference</h3>
+                  <p>We believe that every client is one of our most valued commodities. It is our goal to provide you with personalized, comprehensive and innovative legal representation whether you are a victim of a car accident, motorcycle accident, or dealing with the cost and pain associated with a vicious dog bite. We strive to get you the results you deserve. When we take your case our team of skilled attorneys and legal professionals will:</p>
+                  <br>
+              </section>
 
-                <img class="img-responsive thumbnail imgShadow pull-left" src="./assets/images/stock_images/goldman-office.jpg" style="max-width:230px; margin: 0px 25px 25px 0;"><p>We believe that every client is one of our most valued commodities. It is our goal to provide you with personalized, comprehensive and innovative legal representation whether you are a victim of a car accident, motorcycle accident, or dealing with the cost and pain associated with a vicious dog bite. We strive to get you the results you deserve. When we take your case our team of skilled attorneys and legal professionals will:</p>
-                <br>
-                <br>
-                <ul class="fa-ul">
-                  <li><i class="fa-li fa fa-check-square-o"></i> Review all accident/ injury details with you</li>
-                  <li><i class="fa-li fa fa-check-square-o"></i> Gather all additional facts and evidence related to the accident/injury</li>
-                  <li><i class="fa-li fa fa-check-square-o"></i> Listen to any concerns you may have</li>
-                  <li><i class="fa-li fa fa-check-square-o"></i> Answer any questions you may have</li>
-                  <li><i class="fa-li fa fa-check-square-o"></i> Work on your case to determine cause, fault and/or negligence</li>
-                  <li><i class="fa-li fa fa-check-square-o"></i> Carefully gather and review all evidence related to your case</li>
-                  <li><i class="fa-li fa fa-check-square-o"></i> Develop a strategy in tandem with you to achieve maximum compensation</li>
-                  <li><i class="fa-li fa fa-check-square-o"></i> Work directly with involved insurance companies or take the case to court</li>
+              <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12 aboutPageList xs-mb-20">
+                <ul class="fa-ul about-list">
+                  <li><i class="fa-li fa fa-caret-right"></i> Review all accident/ injury details with you</li>
+                  <li><i class="fa-li fa fa-caret-right"></i> Gather all additional facts and evidence related to the accident/injury</li>
+                  <li><i class="fa-li fa fa-caret-right"></i> Listen to any concerns you may have</li>
+                  <li><i class="fa-li fa fa-caret-right"></i> Answer any questions you may have</li>
+                  <li><i class="fa-li fa fa-caret-right"></i> Work on your case to determine cause, fault and/or negligence</li>
+                  <li><i class="fa-li fa fa-caret-right"></i> Carefully gather and review all evidence related to your case</li>
+                  <li><i class="fa-li fa fa-caret-right"></i> Develop a strategy in tandem with you to achieve maximum compensation</li>
+                  <li><i class="fa-li fa fa-caret-right"></i> Work directly with involved insurance companies or take the case to court</li>
                 </ul>
-
+              </section>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 pull-right sidebar">
               <ng-include src="'/templates/sidebar-contact-static.html'"></ng-include>
@@ -50,16 +60,15 @@
             </div>
           </div>
       </div>
-  </div>
   <!-- Team Member Profiles -->
-  <div class="section-colored shadow-inset-top-bottom">
+  <section class="colored page-section-colored">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 xs-mb-10">
             <h2 class="page-header">Our Team</h2>
         </div>
-        <div class="col-lg-4 col-lg-offset-1 col-md-6 col-sm-12">
-          <div class="staffCard">
+        <div class="col-lg-4 col-lg-offset-2 col-md-6 col-sm-12">
+          <div class="staffCard xs-mb-20">
               <img class="staffImg" src="./assets/images/staff_photos/ann-geisheimer.jpg">
             <div class="cardDetails">
               <h3>Ann Geisheimer</h3>
@@ -68,7 +77,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-lg-offset-1 col-md-6 col-sm-12">
+        <div class="col-lg-4 col-lg-offset-2 col-md-6 col-sm-12">
           <div class="staffCard">
               <img class="staffImg" src="./assets/images/staff_photos/scott-grifiths.jpg">
             <div class="cardDetails">
@@ -80,9 +89,9 @@
 
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section">
+  <section class="xs-mb-20 xs-mt-30">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -93,22 +102,18 @@
               <p>Our lawyers help you through the most difficult times, and we provide the answers you need along the way. We use technology in creative ways to communicate with our clients, pressure opposing parties and present evidence. We help our clients make sense of the legal process and stay informed with as few barriers as possible</p><br>
               <p>We are your advocates, and we want to help you find relief with the legal options available to you after serious injuries or a death in the family that was caused by the negligence of another party. You deserve the best.</p>
             </div>
-            <div class="col-lg-4 sideBox ">
-              <div class="panel panel-primary shadow-all">
-                <div class="panel-heading">
-                  <h3 class="panel-title">Practice Areas</h3>
-                </div>
-                <div class="panel-body colored">
+            <aside class="col-lg-3 sideBox pull-right">
+              <div class="page-section-colored">
+                <h3 class="xs-mt-0 text-primary">Practice Areas</h3>
                   <ul class="list-group">
-                    <a ui-sref="{{ practice.url | lowercase }}" ng-repeat="practice in practiceAreas | orderBy:'id'" class="list-group-item">{{ practice.title }}</a>
-                    <div class="divider"></div>
-                    <a ui-sref="practice-areas"class="list-group-item"><i class="fa fa-chevron-right" aria-hidden="true"></i> &nbsp;View All</a>
-                  </ul>
-                </div>
+                  <a ui-sref="{{ practice.url | lowercase }}" ng-repeat="practice in practiceAreas | orderBy:'id'" class="list-group-item">{{ practice.title }}</a>
+                  <div class="divider"></div>
+                  <a ui-sref="practice-areas"class="list-group-item"><i class="fa fa-chevron-right" aria-hidden="true"></i> &nbsp;View All</a>
+                </ul>
               </div>
-            </div>
+            </aside>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </div>

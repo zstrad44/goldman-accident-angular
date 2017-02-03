@@ -32,7 +32,7 @@ a:hover,a:focus {
 p {
   font-size: 1.15em;
 }
-.breadcrumb {
+/*.breadcrumb {
   background-color: #e2e1e0;
   margin-top: 5px;
 }
@@ -45,7 +45,87 @@ p {
   border-radius: 0;
 }
 .breadcrumb>li+li:before {
+}*/
+/*Breadcrumbs*/
+.breadcrumbBox {
+    background-color: #404040;
+/*    border: 1px solid #707070;*/
+    padding: 2px 0;
+    margin-bottom: 3px;
+
 }
+.btn-breadcrumb .btn {
+  color: #0081ba;
+  background-color: #efefef;
+    padding:6px 12px 6px 24px;
+    border-radius: 0;
+    border-color: none;
+    border: none;
+}
+.btn-breadcrumb .btn:hover {
+  color: #606060;
+  background-color: #ddd;
+}
+.btn-breadcrumb .btn.active {
+  color: #606060;
+  background-color: #ddd;
+}
+.btn-breadcrumb .btn:not(:last-child):after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-left: 10px solid white;
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+    left: 98%;
+    z-index: 3;
+    border-radius: 0;
+}
+.btn-breadcrumb .btn:not(:last-child):before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-left: 10px solid rgb(173, 173, 173);
+    border-radius: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+    margin-left: 1px;
+    left: 98%;
+    z-index: 3;
+}
+
+/** The Spacing **/
+.btn-breadcrumb .btn:first-child {
+    padding:6px 6px 6px 10px;
+}
+.btn-breadcrumb .btn:last-child {
+    padding:6px 18px 6px 24px;
+}
+
+/** Default button **/
+.btn-breadcrumb .btn.btn-default:not(:last-child):after {
+    border-left: 10px solid #efefef;
+}
+.btn-breadcrumb .btn.btn-default:not(:last-child):before {
+    border-left: 10px solid #ccc;
+}
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {
+    border-left: 10px solid #ddd;
+}
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {
+    border-left: 10px solid #adadad;
+}
+/*End Breadcrumbs*/
+
+
 .wireButton {
   background-color: transparent;
 }
@@ -56,7 +136,7 @@ p {
 /*End UI Fix*/
 
 .viewBox {
-    margin-top: 115px;
+    margin-top: 95px;
 }
 
 .dropdown {
@@ -79,7 +159,10 @@ p {
     margin: 0px 0 15px;
     border-bottom: 1px solid #eee;
 }
-
+.page-section-colored {
+  padding: 20px 0;
+  box-shadow: 0 -6px 6px -6px rgba(0,0,0,0.33), 0 6px 6px -6px rgba(0,0,0,0.33);
+}
 /*sidebar-contact-static Styles START*/
 
   .staticSideBar {
@@ -130,8 +213,22 @@ p {
     padding: 5px;
     border: 1px solid #cccccc;
 }
+.sideBox .list-group {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.33);
+}
 .sideBox .list-group-item {
   font-size: 1.1em;
+}
+.sideBox .list-group-item:last-child {
+  background-color: #0081ba;
+  color: #fff;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.16), 0 1px 8px rgba(0,0,0,0.33);
+  border: none;
+  border-radius: 0;
+}
+.sideBox .list-group-item:last-child:hover {
+  background-color: #0061ba;
+  color: #fff;
 }
 .sideBox .list-group-item:hover {
   background-color: #0081ba;

@@ -1,0 +1,101 @@
+.consultationHero {
+  background-color: #0088CC;
+  background: #0088CC;
+  background: -moz-radial-gradient(center, ellipse cover,  #0088CC 0%, #0081ba 80%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#0088CC), color-stop(80%,#0081ba));
+  background: -webkit-radial-gradient(center, ellipse cover,  #0088CC 0%,#0081ba 80%);
+  background: -o-radial-gradient(center, ellipse cover,  #0088CC 0%,#0081ba 80%);background: -ms-radial-gradient(center, ellipse cover,  #0088CC 0%,#0081ba 80%);
+  background: radial-gradient(ellipse at center,  #0088CC 0%,#0081ba 80%);
+  overflow: hidden;
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+.consultationHero h2 {
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+.consultationHero h3 {
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+.tab-content {
+  border: 1px solid #0081BA;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 4px 4px rgba(0,0,0,0.23);
+  padding: 15px;
+}
+.tabBox button.wireButtonPrimary.active {
+  background-color: #0081BA;
+  color: #fff;
+}
+.tabBox button.wireButtonPrimary {
+  border-bottom: 0;
+}
+@media (min-width: 1000px) {
+
+  .tabBox {
+    padding:0 0 0 0;
+  }
+}
+
+@media(max-width: 768px) {
+  .tabBox {
+    padding:0 0 0 0;
+  }
+
+}
+.outerBox {
+  margin: 0 auto;
+  margin-top: 40px;
+
+}
+.box {
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23), 0 -6px 6px -6px rgba(0,0,0,0.33);
+  padding: 10px;
+  border: 1px solid #0081BA;
+}
+.box .btn {
+  margin-bottom: 10px;
+}
+
+ .box .imgBox {
+   text-align: center;
+   width: 8vw;
+   margin: 0 auto;
+ }
+  .box .imgBox img {
+    width: 100%;
+  }
+  .box .btn {
+    width: 80%;
+  }
+@media (min-width: 1000px) {
+  .outerBox {
+
+     height: 320px;
+  }
+  .box {
+    height: 300px;
+    margin: 0 auto;
+    margin: 5px;
+    text-align: center;
+  }
+ }
+ @media (max-width: 768px;) {
+   .outerBox {
+      display: inline-block;;           /* establish flex container */
+      justify-content: center; /* center items vertically, in this case */
+      align-items: center;     /* center items horizontally, in this case */
+      height: auto;
+   }
+   .box {
+     height: auto;
+     width: auto;
+     text-align: center;
+     margin: 0;
+     padding: 10px;
+   }
+
+ }

@@ -24,16 +24,3 @@ angular
       }
     ];
   }]);
-
-
-// (function() {
-//     function AboutCtrl($scope) {
-//         $scope.heroBackgroundImg = 'https://s25.postimg.org/gzi2vfjhr/57280364.jpg';
-//     }
-//
-//
-//
-//     angular
-//         .module('gaApp')
-//         .controller('AboutCtrl',['$scope', AboutCtrl] );
-// })();
