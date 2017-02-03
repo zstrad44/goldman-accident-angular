@@ -1,6 +1,6 @@
 angular
 .module('gaApp')
-.factory('PracticeData', function() {
+.service('PracticeData', function() {
 
 var PracticeData = {};
 
@@ -137,5 +137,7 @@ var practiceAreas = [{
   PracticeData.getPracticeAreas = function () {
     return practiceAreas;
   };
+
+  return PracticeData;
 
 });

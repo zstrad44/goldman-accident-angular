@@ -50,7 +50,8 @@ angular
     });
   };
     $scope.initDropdownMenu();
-
+// console.log(PracticeData.getPracticeAreas());
+//   $scope.practiceAreas = PracticeData.getPracticeAreas();
 
     $scope.practiceAreas  = [
         {

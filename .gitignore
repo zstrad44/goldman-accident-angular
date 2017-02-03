@@ -3,3 +3,7 @@ bower_components/
 .idea/
 .sass-cache/
 .DS_Store
+.firebaserc
+firebase.json
+database.rules.json
+/public

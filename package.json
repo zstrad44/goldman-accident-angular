@@ -1,16 +1,16 @@
 {
-  "name": "bloc-frontend-project-starter",
-  "version": "0.0.2",
-  "description": "Starter project for the Bloc Frontend Web Development",
+  "name": "goldman-accident-lawyers-web-app",
+  "version": "0.0.1",
+  "description": "Website for Goldman Accident Lawyers Law Firm.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bloc/bloc-frontend-project-starter"
+    "url": "https://github.com/zstrad44/goldman-accident-angular"
   },
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Bloc Inc",
+  "author": "Zach Stradling",
   "license": "ISC",
   "dependencies": {
     "hapi": "~7.5.0",
