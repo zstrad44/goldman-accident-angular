@@ -1,8 +1,24 @@
 angular
   .module('gaApp', [
-    'ui.router'
+    'ui.router',
+    'ngMeta'
   ])
-  .config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
+  .config(['$urlRouterProvider', '$stateProvider', '$locationProvider', 'ngMetaProvider', function($urlRouterProvider, $stateProvider, $locationProvider, ngMetaProvider) {
+    // ngMeta Default Configuration
+    // ngMetaProvider.setDefaultTitle('Goldman Accident Lawyers Scottsdale');
+    // ngMetaProvider.useTitleSuffix(true);
+    // ngMetaProvider.setDefaultTitleSuffix(' | Goldman Accident Lawyers Scottsdale');
+    // ngMetaProvider.setDefaultTag('type', 'website');
+    // ngMetaProvider.setDefaultTag('url', 'http://goldmanaccidentlawyers.com/');
+    // ngMetaProvider.setDefaultTag('image', 'http://goldmanaccidentlawyers.com/assets/images/logos/new_goldman_blue_FINAL_no_glow.png');
+    // ngMetaProvider.setDefaultTag('description', 'Get help from a personal injury law firm in Scottsdale. Contact a personal injury and auto accident attorney in Arizona at Goldman Accident Lawyers.');
+    // Remove hashbang
+    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: true,
+        rewriteLinks: false,
+    });
+    // Redirect 404
     $urlRouterProvider.otherwise('/');
     $stateProvider
       .state('master', {
@@ -15,7 +31,20 @@ angular
         url: '/',
         parent: 'master',
         templateUrl: '/templates/home.html',
-        controller: 'HomeCtrl'
+        controller: 'HomeCtrl',
+        resolve: {
+                  $title: function() {
+                      return 'Home';
+                  },
+                  data: function(ngMeta) {
+                      ngMeta.setTitle('Personal Injury Attorneys');
+                      ngMeta.setTag('url', 'http://goldmanaccidentlawyers.com/');
+                      ngMeta.setTag('type', 'website');
+                      ngMeta.setTag('image', 'http://goldmanaccidentlawyers.com/assets/img/header/peoplelinx_logo.png');
+                      ngMeta.setTag('description', 'Get help from a personal injury law firm in Scottsdale. Contact a personal injury and auto accident attorney in Arizona at Goldman Accident Lawyers.');
+                      ngMeta.setTag('site_name', 'Goldman Accident Lawyers');
+                  }
+              }
       })
       .state('practice-areas', {
         url: '/practice-areas',
@@ -139,4 +168,9 @@ angular
       .state('blog', {
         url: 'http://goldmanaccidentlawyers.com/blog'
       });
-  }]);
+
+      // $locationProvider.html5Mode(true);
+  }])
+  .run(['ngMeta', function(ngMeta) {
+         ngMeta.init();
+     }]);

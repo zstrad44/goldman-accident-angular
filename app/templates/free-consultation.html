@@ -10,24 +10,10 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 col-xs-12">
-
-        <div class="col-lg-4 col-xs-6 text-center tabBox">
-          <button class=" btn wireButtonPrimary btn-block active" href="#tab1" data-toggle="tab">Basic Information <br><small>I'm in a hurry!</small></button>
-        </div>
-        <div class="col-lg-4 col-xs-6 text-center tabBox">
-          <button class=" btn wireButtonPrimary btn-block shadow-top" href="#tab2" data-toggle="tab">Detailed Information <br><small>I have 30 seconds to spare.</small></button>
-        </div>
-        <div class="tab-content col-lg-12 col-xs-12">
-            <div class="tab-pane active basic-form-pane" id="tab1">
-              <ng-include src="'/templates/partials/basic-form.html'"></ng-include>
-            </div>
-            <div class="tab-pane detailed-form-pane" id="tab2">
-              <ng-include src="'/templates/partials/detailed-form.html'"></ng-include>
-            </div>
-            <div class="tab-pane chat-pane" id="tab3">
-              <p>start-chat</p>
-            </div>
-        </div>
+        <!--TabBoxes that house contact forms  -->
+        <ng-include src="'/templates/partials/tabBoxes.html'"></ng-include>
+        <!--Modal for terms and conditions  -->
+        <ng-include src="'/templates/partials/contact-terms-and-conditions.html'"></ng-include>
       </div>
       <div class="col-lg-4 col-sm-6 col-xs-6 outerBox visible-lg">
         <div class="box material-designShadow">
@@ -35,7 +21,7 @@
             <img src="/assets/images/icons/chat-bubbles.png" alt="chat bubbles, png">
           </div>
           <h3>Live Chat</h3>
-          <button class="btn wireButtonPrimary">Start Now</button>
+          <a href="javascript:void(Tawk_API.toggle())" class="btn wireButtonPrimary">Start Now</a>
         </div>
       </div>
       <div class="col-lg-4 col-sm-6 col-xs-6 outerBox visible-lg">
@@ -53,7 +39,7 @@
             <img src="/assets/images/icons/map-check.png" alt="map, png">
           </div>
           <h3>Come Visit Us</h3>
-          <button class="btn wireButtonPrimary">Our Location</button>
+          <a href="{{mapLink}}" class="btn wireButtonPrimary" target="_blank">Our Location</a>
         </div>
       </div>
     </div>

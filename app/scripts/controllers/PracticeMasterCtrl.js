@@ -7,6 +7,7 @@ angular
       for(var i = 0; i < $scope.practiceAreas.length; i++) {
         if( $state.current.name === $scope.practiceAreas[i].url ) {
           $scope.pageTitle = $scope.practiceAreas[i].title;
+          $scope.titlePlural = $scope.practiceAreas[i].titlePlural;
           $scope.pageIcon = $scope.practiceAreas[i].icon;
           $scope.pageIconAlt = $scope.practiceAreas[i].alt;
         }

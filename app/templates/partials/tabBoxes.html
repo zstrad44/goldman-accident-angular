@@ -1,0 +1,22 @@
+
+<ul class="nav nav-tabs tabsUlBox">
+    <li class="outerTabBox active">
+        <div class="tabBox">
+                <a class=" btn wireButtonPrimary btn-block " href="#tab1" data-toggle="tab">Basic Information<br><small>Just a Quick Note</small></a>
+        </div>
+    </li>
+    <li class="outerTabBox">
+        <div class="tabBox">
+                <a class=" btn wireButtonPrimary btn-block shadow-top" href="#tab2" data-toggle="tab">Detailed Information<br><span class="visible-xs visible-sm"><small>Preferred Option</small></span><span class="visible-lg visible-md"><small>I have 30 seconds to spare.</small></span></a>
+        </div>
+    </li>
+</ul>
+
+<div class="tab-content col-lg-12 col-xs-12">
+    <div class="tab-pane active basic-form-pane" id="tab1">
+      <ng-include src="'/templates/partials/basic-form.html'"></ng-include>
+    </div>
+    <div class="tab-pane detailed-form-pane" id="tab2">
+      <ng-include src="'/templates/partials/detailed-form.html'"></ng-include>
+    </div>
+</div>

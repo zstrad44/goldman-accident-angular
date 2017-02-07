@@ -3,13 +3,14 @@
 
     <div class="breadcrumbBox">
       <div class="container">
-        <ol class="breadcrumb">
-            <li><a ui-sref="home" class="btn">Home</a></li>
-            <li><a ui-sref="practice-areas" class="btn">Practice Areas</a></li>
-            <li class="active"><a href="practice-areas" class="btn disabled">{{pageTitle}}</a></li>
-        </ol>
+          <div  id="bc1" class="btn-group btn-breadcrumb">
+              <a ui-sref="home" class="btn btn-default"><i class="glyphicon glyphicon-home text-primary"></i></a>
+              <a ui-sref="practice-areas" class="btn btn-default">Practice Areas</a>
+              <a href="#" class="btn btn-default active disabled">{{titlePlural}}</a>
+          </div>
       </div>
     </div>
+
     <div class="col-xs-12 practicePageHero bg-primary shadow-inset-top-bottom visible-md visible-lg">
         <div class="col-xs-12">
             <h3>Need A {{pageTitle}} Lawyer?</h3>
@@ -17,7 +18,7 @@
         <div class="col-xs-12 col-md-12">
             <a ui-sref="free-consultation" class="btn wireButtonWhite">FIND OUT NOW IF YOU HAVE A CASE</a>
         </div>
-    </div> 
+    </div>
   </div>
 </div>
 <div class="container" ng-controller="PracticeMasterCtrl">

@@ -7,3 +7,4 @@ bower_components/
 firebase.json
 database.rules.json
 /public
+firebase-debug.log

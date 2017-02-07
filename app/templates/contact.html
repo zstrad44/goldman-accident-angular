@@ -1,7 +1,4 @@
-
-
-
-  <div class="container contact-page" >
+   <div class="container contact-page" >
     <div>
       <div class="col-lg-12 xs-mb-20 xs-mt-20">
           <h1 class="page-header">Contact
@@ -16,42 +13,29 @@
         <a href="tel:{{phoneNumber}}" class="btn wireButtonPrimary btn-block callToActionBtn"><i class="fa fa-phone"></i>{{phoneNumber}}</a>
         <br>
         <!-- <h4>Come See Us</h4> -->
-        <a href="tel:{{phoneNumber}}" class="btn wireButtonPrimary btn-block callToActionBtn"><i class="fa fa-location-arrow"></i>Get Directions</a>
+        <a href="{{mapLink}}" class="btn wireButtonPrimary btn-block callToActionBtn" target="_blank"><i class="fa fa-location-arrow"></i>Get Directions</a>
       </div>
       <div class="col-lg-8 col-xs-12">
 
-        <div class="col-lg-4 col-xs-6 text-center tabBox">
-          <button class=" btn wireButtonPrimary btn-block tabBtn1 active" href="#tab1" data-toggle="tab">Basic Information<br><small>Just a Quick Note</small></button>
-        </div>
-        <div class="col-lg-4 col-xs-6 text-center tabBox">
-          <button class=" btn wireButtonPrimary btn-block shadow-top tabBtn2" href="#tab2" data-toggle="tab">Detailed Information<br><span class="visible-xs visible-sm"><small>Preferred Option</small></span><span class="visible-lg visible-md"><small>I have 30 seconds to spare.</small></span></button>
-        </div>
-        <div class="tab-content col-lg-12 col-xs-12">
-            <div class="tab-pane active basic-form-pane" id="tab1">
-              <ng-include src="'/templates/partials/basic-form.html'"></ng-include>
-            </div>
-            <div class="tab-pane detailed-form-pane" id="tab2">
-              <ng-include src="'/templates/partials/detailed-form.html'"></ng-include>
-            </div>
-            <div class="tab-pane chat-pane" id="tab3">
-              <p>start-chat</p>
-            </div>
-        </div>
+        <!--TabBoxes that house contact forms  -->
+        <ng-include src="'/templates/partials/tabBoxes.html'"></ng-include>
+        <!--Modal for terms and conditions  -->
+        <ng-include src="'/templates/partials/contact-terms-and-conditions.html'"></ng-include>
       </div>
-      <div class="col-lg-4 col-sm-12 col-xs-12 outerBox ">
+      <div class="col-lg-4 col-sm-12 col-xs-12 outerBox addressBox">
         <div class="box material-designShadow" style="margin-top: 28px; height: 327px;">
           <div class="row">
               <div class="col-sm-12">
                   <h3>Goldman Accident Lawyers</h3>
-                  <h4>Scottsdale Personal Injury Experts</h4>
-                  <p>
+                  <h5>Scottsdale Personal Injury Experts</h5>
+                <a href="{{mapLink}}" target="_blank">  <p>
                       {{addressStreetOne}}<br>
                       {{addressCityStateZip}}<br>
-                  </p>
-
-                  <p><i class="fa fa-envelope-o"></i> <abbr title="Email">E</abbr>:
-                      <a href="mailto:{{contactEmail}}">{{contactEmail}}</a></p>
-                  <p><i class="fa fa-clock-o"></i> <abbr title="Hours">H</abbr>: {{businessHours}}</p>
+                  </p></a>
+                  <br>
+                  <h4><i class="fa fa-clock-o"></i> Business Hours</h4>
+                  <p>{{businessHoursDays}}</p>
+                  <p>{{businessHoursTimes}}</p>
                   </ul>
               </div>
           </div>
@@ -65,7 +49,7 @@
             <img src="/assets/images/icons/chat-bubbles.png" alt="chat bubbles, png">
           </div>
           <h3>Live Chat</h3>
-          <button class="btn wireButtonPrimary">Start Now</button>
+            <a href="javascript:void(Tawk_API.toggle())" class="btn wireButtonPrimary">Start Now</a>
         </div>
       </div>
       <div class="col-lg-4 col-sm-6 col-xs-6 outerBox visible-lg">
@@ -83,7 +67,7 @@
             <img src="/assets/images/icons/map-check.png" alt="map, png">
           </div>
           <h3>Come Visit Us</h3>
-          <button class="btn wireButtonPrimary">Our Location</button>
+            <a href="{{mapLink}}" class="btn wireButtonPrimary" target="_blank">Our Location</a>
         </div>
       </div>
     </div>

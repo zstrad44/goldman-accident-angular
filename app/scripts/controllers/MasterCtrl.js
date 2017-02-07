@@ -5,6 +5,8 @@ angular
   // Company Information
   $scope.phoneNumber = '480-626-8483';
   $scope.contactEmail = 'info@goldmanaccidentlawyers.com';
+  $scope.businessHoursTimes = '8:30 AM to 5:00 PM';
+  $scope.businessHoursDays = 'Monday - Friday';
   $scope.businessHours = 'Monday - Friday: 8:30 AM to 5:00 PM';
   $scope.addressStreetOne = "17851 N 85th St \#175";
   $scope.addressStreetTwo = "";
@@ -12,28 +14,33 @@ angular
   $scope.addressCity = "Scottsdale";
   $scope.addressState = "AZ";
   $scope.addressZip = "85255";
+  $scope.mapLink = "http://maps.google.com/maps?q=17851+N+85th+st,+%23175+Scottsdale,+AZ+85255";
   // varible for current date
   $scope.date = new Date();
 
+  $scope.$on('$stateChangeSuccess', function () {
+     window.scrollTo(0, 0);
+  });
 
-   $scope.switchActive1 =  function () {
-     $(function () {
-       $scope.tabButton1 = $('.tabBtn1').click(function() {
-         $(this).addClass("active");
-         $('.tabBtn2').removeClass("active");
-       });
-    });
-   };
-   $scope.switchActive1();
-   $scope.switchActive2 =  function () {
-     $(function () {
-       $scope.tabButton2 = $('.tabBtn2').click(function() {
-         $(this).addClass("active");
-         $('.tabBtn1').removeClass("active");
-       });
-    });
-   };
-   $scope.switchActive2();
+  // active state script for contact/ free consultation pages
+  //  $scope.switchActive1 =  function () {
+  //    $(function () {
+  //      $scope.tabButton1 = $('.tabBtn1').click(function() {
+  //        $(this).addClass("active");
+  //        $('.tabBtn2').removeClass("active");
+  //      });
+  //   });
+  //  };
+  //  $scope.switchActive1();
+  //  $scope.switchActive2 =  function () {
+  //    $(function () {
+  //      $scope.tabButton2 = $('.tabBtn2').click(function() {
+  //        $(this).addClass("active");
+  //        $('.tabBtn1').removeClass("active");
+  //      });
+  //   });
+  //  };
+  //  $scope.switchActive2();
   // Nav dropdownMenu script; adding functionality open on hover for desktop breakpoints
   $scope.initDropdownMenu = function () {
     $(function () {
